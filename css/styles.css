@@ -537,7 +537,7 @@ text-shadow:1px 1px #73757E;
 }
 
 
-
+/* SECTION 3
 #sec-3{
     background-color: var(--txtaccent);
     padding-top: 30px;
@@ -545,10 +545,10 @@ text-shadow:1px 1px #73757E;
 }
 #sec-3 h1{
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
-    color: var(--bgaccent);
+    color: var(--haccent);
     font-weight: 900;
 }
 #sec-3 .cont{
@@ -599,7 +599,92 @@ text-shadow:1px 1px #73757E;
     padding: 6px 15px;
     border-radius: 5px;
     display: inline-block;
+} */
+
+#sec-3 h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--haccent);
+    font-weight: 900;
 }
+
+/* Ensure custom width for cards in Section 3 */
+#sec-3 .custom-width {
+    flex: 0 0 auto; /* Prevent Bootstrap's column shrinking behavior */
+    width: 100%;
+    max-width: 100%; /* Adjust width to make both cards fit in a single row */
+}
+
+/* Flip Card Styling */
+.flip-card {
+    perspective: 1000px;
+    position: relative;
+    width: 100%; /* Allow width to be controlled by the parent container */
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.flip-card-front {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flip-card-back {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--txtaccent);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--txtaccent);
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 /* SECTION 4 */
 #sec-4{
     background: linear-gradient(rgba(78, 76, 70, 0.8),rgba(78, 76, 70, 0.8)), url(../Images/bg2.jpg) no-repeat center center/cover;
