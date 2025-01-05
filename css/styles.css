@@ -366,7 +366,7 @@ html {
 }
 
 
-
+/* SECTION 2
 #sec-2{
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../Images/bg4.jpg) no-repeat center center/cover;
     text-align: center;
@@ -426,7 +426,117 @@ color: var(--haccent2);
 color: var(--txtaccent);
 font-size: 0.88rem;
 text-shadow:1px 1px #73757E;
+} */
+
+/* SECTION 2 */
+#sec-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/bg4.jpg) no-repeat center center/cover;
+    text-align: center;
+    padding: 3rem 0px 1.8rem;
+    overflow: hidden; /* Prevents overflow */
 }
+
+#sec-2 .container > h1 {
+    color: var(--haccent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#sec-2 .container > p {
+    color: var(--txtaccent);
+    margin-bottom: 80px;
+    justify-self: center;
+    width: 60%;
+}
+
+
+
+#sec-2 article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between cards */
+}
+
+#sec-2 article figure {
+    text-align: center;
+    width: 250px; /* Fix card size */
+    margin-top: 20px;
+    position: relative;
+}
+
+#sec-2 article .icon-container {
+    position: absolute;
+    top: -50px; /* Adjust to position the image above the card */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: var(--haccent2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Ensure it stays above the card */
+}
+
+#sec-2 article .icon-container img {
+    max-width: 60%;
+    height: auto;
+}
+
+/* Flip Card */
+#sec-2 article figure .flip-card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d; /* Enables 3D transformations */
+    transition: transform 1.5s ease-in-out; /* Smooth flipping */
+}
+
+#sec-2 article figure .flip-card.is-visible {
+    transform: rotateY(180deg); /* Flip the card */
+}
+
+/* Front Side */
+#sec-2 article figure .flip-card .front,
+#sec-2 article figure .flip-card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Ensures only front or back is visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    border-radius: 10px;
+}
+
+#sec-2 article figure .flip-card .back {
+    transform: rotateY(180deg); /* Start rotated for back side */
+}
+
+/* Content Styling */
+#sec-2 article figure .flip-card .cont h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--haccent2);
+    padding: 0px 15px;
+}
+
+#sec-2 article figure .flip-card .cont p {
+    color: var(--txtaccent);
+    font-size: 0.88rem;
+    text-shadow: 1px 1px #73757E;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+
 
 #sec-3{
     background-color: var(--txtaccent);
