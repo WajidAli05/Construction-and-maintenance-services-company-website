@@ -685,6 +685,7 @@ text-shadow:1px 1px #73757E;
     bottom: 0;
 }
 
+
 /* SECTION 4 */
 #sec-4{
     background: linear-gradient(rgba(78, 76, 70, 0.8),rgba(78, 76, 70, 0.8)), url(../Images/bg2.jpg) no-repeat center center/cover;
@@ -740,8 +741,11 @@ text-shadow:1px 1px #73757E;
     margin-bottom: 10px;
     width: 48%;
 }
+
+
+
 /* SECTION 5 */
-#sec-5{
+/* #sec-5{
     background: url(../Images/bg3.jpg) no-repeat center center/cover;
     text-align: center;
     padding-top: 2rem;
@@ -869,6 +873,111 @@ text-shadow:1px 1px #73757E;
 .invalid{
     box-shadow: inset 0px 0px 10px #e67a7a;
 }
+
+.customer{
+    width: 70px;
+    height: 80px;
+} */
+
+
+#sec-5 {
+    background: url(../Images/bg3.jpg) no-repeat center center/cover;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 0.9rem;
+}
+#sec-5 h1 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin-bottom: 1.6rem;
+    color: var(--txtaccent4);
+    font-weight: 800;
+}
+#sec-5 h1+p {
+    color: var(--txtaccent4);
+    padding: 0px 2rem;
+    margin-bottom: 4rem;
+}
+#sec-5 .cont {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 5vh;
+}
+#sec-5 article {
+    width: 70%;
+}
+
+#sec-5 article:nth-of-type(2) div.quotetxt {
+    color: var(--bgaccent);
+    background-color: var(--haccent);
+}
+
+#sec-5 .quotetxt {
+    display: flex;
+    align-items: stretch;
+    padding: 1.8em 1.7em 2em 1em;
+    background-color: var(--txtaccent5);
+    text-align: justify;
+    word-break: break-all;    
+    position: relative;
+}
+#sec-5 .quotetxt p:first-child {
+    padding-right: 0.7em;
+}
+#sec-5 .quotetxt p:first-child img {
+    min-width: 100%;
+}
+#sec-5 .quotetxt p:last-child {
+    padding-top: 3px;
+}
+#sec-5 .arrow:after {
+    content: '';
+    position: absolute;
+    border: 15px solid transparent;
+    border-top-color: var(--txtaccent5);
+    left: calc(50% - 15px);
+    top: 100%;
+}
+
+#sec-5 article:nth-child(2) .arrow:after {
+    content: '';
+    position: absolute;
+    border: 15px solid transparent;
+    border-top-color: var(--haccent);
+    left: calc(50% - 15px);
+    top: 100%;
+}
+
+#sec-5 figure {
+    margin-top: 1.85rem;
+}
+#sec-5 .customer {
+    display: block;
+    margin: 0px auto;
+    border-radius: 50%;
+    width: 70px;
+    height: 80px;
+}
+#sec-5 figcaption {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px #73757E;
+}
+/* Animation styles */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
 /* SECTION SIX */
 #sec-6{
     background: linear-gradient(rgba(0, 0, 0,0.9),rgba(0, 0, 0,0.9)), url(../Images/rascacielos-nueva-york.jpg) no-repeat center center/cover;

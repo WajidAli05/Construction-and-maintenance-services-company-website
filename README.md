@@ -76,7 +76,7 @@ To do:
 
 
 ## Contact
-Created by [@Orion56](https://github.com/Orion56) - feel free to contact me!
+Created by [@wajidali05](https://github.com/wajidali05) - feel free to contact me!
 
 
 ## License

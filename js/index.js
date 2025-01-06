@@ -16,3 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cards.forEach((card) => observer.observe(card));
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll('.animate-on-scroll');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing after animation
+            }
+        });
+    }, { threshold: 0.2 }); // Trigger when 10% of the element is visible
+
+    elements.forEach(el => observer.observe(el));
+});
