@@ -605,6 +605,7 @@ text-shadow:1px 1px #73757E;
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 30px;
+    margin-top: 30px;
     text-align: center;
     color: var(--haccent);
     font-weight: 900;
@@ -613,7 +614,7 @@ text-shadow:1px 1px #73757E;
 /* Ensure custom width for cards in Section 3 */
 #sec-3 .custom-width {
     flex: 0 0 auto; /* Prevent Bootstrap's column shrinking behavior */
-    width: 100%;
+    width: 30%;
     max-width: 100%; /* Adjust width to make both cards fit in a single row */
 }
 
@@ -1231,20 +1232,8 @@ text-shadow:1px 1px #73757E;
     #sec-2 article figure img{
         max-width: 55%;
     }
-    #sec-3 {
-        padding-top: 40px;
-        padding-bottom: 50px;
-    }
-    #sec-3 .cont{
-        flex-direction: row;
-    }
-    #sec-3 .card{
-        width: 48%;
-    }
-    #sec-3 .card:last-child{
-        margin-left: auto;
-        margin-right: auto;
-    }
+
+
     #sec-4 .cont{
         width: 100%;
         margin: 0px;
@@ -1319,17 +1308,7 @@ text-shadow:1px 1px #73757E;
     #sec-2 article figure{
         max-width: 21%;
     }
-    #sec-3 {
-        padding-top: 70px;
-        padding-bottom: 60px;
-    }
-    #sec-3 .card{
-        width: 31%;
-    }
-    #sec-3 .card:last-child{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+
     #sec-4 .cont{
         display: flex;
         flex-flow: row wrap;
