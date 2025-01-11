@@ -698,7 +698,7 @@ text-shadow:1px 1px #73757E;
     text-transform: uppercase;
     font-size: 1.7rem;
     margin-bottom: 1.6rem;
-    color: var(--txtaccent);
+    color: var(--haccent);
     font-weight: 800;
 }
 #sec-4 p{
@@ -891,7 +891,7 @@ text-shadow:1px 1px #73757E;
     text-transform: uppercase;
     font-size: 1.7rem;
     margin-bottom: 1.6rem;
-    color: var(--txtaccent4);
+    color: var(--haccent);
     font-weight: 800;
 }
 #sec-5 h1+p {
