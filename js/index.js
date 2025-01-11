@@ -36,3 +36,68 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+// Select the scroll-to-top button
+const scrollTopButton = document.querySelector('.scroll-top');
+
+// Add a scroll event listener
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) { // Adjust the scroll distance as needed
+        scrollTopButton.classList.add('active');
+    } else {
+        scrollTopButton.classList.remove('active');
+    }
+});
+
+// Add a click event listener to scroll to the top
+scrollTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+
+
+// Select the Contact Us button
+const contactUsButton = document.querySelector('.contact-us');
+
+// Add a click event listener for the Contact Us button
+contactUsButton.addEventListener('click', () => {
+    // Open the modal (replace '#contactModal' with your modal ID if different)
+    const contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+    contactModal.show();
+});
+
+
+// Initialize EmailJS
+emailjs.init('B9S6B0gvG9Y0zoBlm'); // Replace with your EmailJS public key
+
+// Handle Form Submission
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Collect form data
+    const formData = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        address: document.getElementById('address').value,
+        details: document.getElementById('details').value,
+    };
+
+    // Send email via EmailJS
+    emailjs.send('service_rq5kqa9', 'template_4nun0m5', formData)
+        .then(() => {
+            alert('Your message has been sent successfully!');
+            // Clear form fields
+            document.getElementById('contactForm').reset();
+            // Close modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+            modal.hide();
+        })
+        .catch((error) => {
+            console.error('EmailJS Error:', error);
+            alert('There was an error sending your message. Please try again.');
+        });
+});

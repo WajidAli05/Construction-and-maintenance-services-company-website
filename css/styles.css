@@ -23,6 +23,8 @@ html {
     --haccent2: #C79E23;
     --bgaccent: #1A1C27;
     --bgaccent_withOpacity: rgba(26, 28, 39,0.96);
+    --contact: #28a745;
+    --contact_hover: #218838;
 }
 .container{
     width: 95%;
@@ -1390,6 +1392,96 @@ text-shadow:1px 1px #73757E;
     }
 }
 
+
+/* SCROLL TO TOP BUTTON */
+/* Scroll-to-Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    background-color: var(--haccent); /* Button color */
+    color: var(--txtaccent4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-top:hover {
+    background-color: var(--haccent2); /* Hover effect */
+    color: var(--txtaccent);
+}
+
+/* When user scrolls down, show the button */
+.scroll-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Contact Us Button */
+.contact-us {
+    position: fixed;
+    bottom: 100px; /* Place it above the scroll-top button */
+    right: 20px;
+    width: 150px;
+    height: 60px;
+    background-color: var(--contact); /* Button color (green) */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    opacity: 0;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.contact-us i {
+    margin-right: 8px; /* Add space between icon and text */
+}
+
+.contact-us:hover {
+    background-color: var(--contact_hover); /* Hover effect */
+}
+
+/* When user scrolls down, show the button */
+.contact-us.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: var(--haccent);
+    border-radius: 15px;
+}
+
+.modal-header .modal-title {
+    color: var(--txtaccent);
+}
+
+.form-label {
+    color: var(--txtaccent1);
+}
+
+.btn-success {
+    background-color: var(--contact);
+    border: none;
+}
 
 
 /* END OF SHEET */
