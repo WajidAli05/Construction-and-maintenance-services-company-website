@@ -22,13 +22,13 @@
                 <div class="social">
                     <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><img src="Images/youtube-logotype.png" alt=""></i></a>
+                    <a href="#"><img src="Images/youtube-logotype.png" alt=""></a>
                 </div>
             </div>
         </header>
         <header>
             <div class="hide" id="searchBar">
-                <input type="search" name="searchBox" id="searchBox" placeholder="Type your search here..    Press [Esc] to exist">
+                <input type="search" name="searchBox" id="searchBox" placeholder="Type your search here..    Press [Esc] to exit">
             </div>
             <div class="container">  
                 <h1>
@@ -39,7 +39,13 @@
                 <input type="checkbox" id="menu">
                 <nav>
                     <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
+                    <div class="dropdown">
+                        <a class="dropdown-btn">Services</a>
+                        <div class="dropdown-content">
+                            <a href="construction.html">Construction</a>
+                            <a href="maintenance.html">Maintenance</a>
+                        </div>
+                    </div>
                     <a href="about.html">About Us</a>
                     <a href="contact.html">Contact</a>
                     <a href="contact.html" class="quotebtn">Get a Quote</a>
@@ -47,20 +53,21 @@
             </div>
         </header>
         <article>
-        <div class="container">
-            <h1> We Are The Professionals You Need</h1>
-            <h2>Construction & Maintenance services<br>
-            <span>Creative AND professional</span></h2>
-            <h1>Your Trusted Partner</h1>
-        </div>
+            <div class="container">
+                <h1> We Are The Professionals You Need</h1>
+                <h2>Construction & Maintenance services<br>
+                <span>Creative AND professional</span></h2>
+                <h1>Your Trusted Partner</h1>
+            </div>
         </article>
     </section>
+    
     <section id="sec-1">
         <div class="container">
             <article>
                 <h1 id="typing">Welcome to JFH!</h1>
                 <p>At JFH Construction & Maintenance Company, we deliver exceptional construction and maintenance solutions designed to meet your unique needs. Whether it’s a residential project, a commercial development, or routine maintenance, we combine expertise and precision to ensure outstanding results every time. From concept to completion, our experienced team works closely with you to bring your vision to life. We prioritize quality, reliability, and efficiency, ensuring every project is completed on time and within budget. Let us transform your ideas into reality with professional craftsmanship and unmatched attention to detail.</p>
-                <a href="services.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                <a href="construction.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
             </article>
             <aside>
                 <img src="Images/img1.png" alt="man">
@@ -68,19 +75,6 @@
         </div>
     </section>
     
-    
-    <!-- <section id="sec-1">
-        <div class="container">
-            <article>
-                <h1>Welcome to JFH!</h1>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate deserunt magni sint mollitia similique corporis quis voluptatibus, eos tempora ealias illo nemo excepturi blanditiis vitae impedit minus tempore praesentium harum. <br><br>Quis, temporibus dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maxime minima quod eius aspernatur. Accusantium sed sunt corrupti sapiente deleniti?</p>
-                <a href="services.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
-            </article>
-            <aside><img src="Images/img1.png" alt="man"></aside>
-        </div>
-    </section> -->
-
     <section id="sec-2">
         <div class="container">
             <h1>Why Choose Us?</h1>
@@ -191,45 +185,6 @@
         </div>
     </section>
     
-    
-    
-    <!-- <section id="sec-2">
-        <div class="container">
-            <h1> why choose us?</h1>
-            <P>At <strong>JFH Construction & Maintenance Company</strong>, we pride ourselves on delivering exceptional craftsmanship, unparalleled professionalism, and innovative solutions tailored to your unique needs. With years of industry experience, we combine expertise and cutting-edge technology to ensure every project is completed on time, within budget, and to the highest standards. Our commitment to quality, attention to detail, and customer-first approach set us apart, making us the trusted partner for all your construction and maintenance requirements. Choose us to transform your vision into reality with reliability you can count on.</P>
-            <article>
-                <figure>
-                    <div><img src="Images/ico1.png" alt=""></div>
-                    <div class="cont">
-                        <h2>we deliver quality</h2>
-                        <p>Quality is at the heart of what we do. We use the best materials and precise techniques to deliver results that exceed expectations and stand the test of time.</p>
-                    </div>
-                </figure>
-                <figure>
-                    <div><img src="Images/ico2.png" alt=""></div>
-                    <div class="cont">
-                        <h2>Always on time</h2>
-                        <p>Time is valuable, and we never waste it. With efficient planning and execution, we complete every project on schedule without compromising quality.</p>
-                    </div>
-                </figure>
-                <figure>
-                    <div><img src="Images/ico3.png" alt=""></div>
-                    <div class="cont">
-                        <h2>we are passionate</h2>
-                        <p>Our passion drives us to deliver innovative solutions and exceptional craftsmanship. Every project reflects our dedication to your vision.</p>
-                    </div>
-                </figure>
-                <figure>
-                    <div><img src="Images/ico4.png" alt=""></div>
-                    <div class="cont">
-                        <h2>proffesional services</h2>
-                        <p>From start to finish, professionalism defines our work. We ensure clear communication, transparency, and reliable service at every stage.</p>
-                    </div>
-                </figure>
-            </article>
-        </div>
-    </section> -->
-
    <section id="sec-3">
     <div class="container text-center">
         <h1 class="mb-5">Our Services</h1>
@@ -245,7 +200,7 @@
                         </div>
                         <div class="flip-card-back card-body">
                             <p>We construct new homes, extensions, and granny flats tailored to your unique needs.</p>
-                            <a href="services.html#residential" class="btn btn-warning text-white">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <a href="construction.html#residential" class="btn btn-warning text-white">Learn More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -261,7 +216,7 @@
                         </div>
                         <div class="flip-card-back card-body">
                             <p>We deliver efficient office buildings, retail spaces, and industrial facility construction.</p>
-                            <a href="services.html#commercial" class="btn btn-warning text-white">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <a href="construction.html#commercial" class="btn btn-warning text-white">Learn More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -276,7 +231,7 @@
                         </div>
                         <div class="flip-card-back card-body">
                             <p>We provide reliable maintenance solutions to keep your buildings, retail spaces, and industrial facilities running smoothly.</p>
-                            <a href="services.html#commercial" class="btn btn-warning text-white">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <a href="maintenance.html" class="btn btn-warning text-white">Learn More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -284,58 +239,11 @@
         </div>
     </div>
 </section>
-
-    
-
-    <!-- <section id="sec-3">
-        <div class="container">
-            <h1>our services</h1>
-            <div class="cont">
-                <div class="card border-0">
-                    <div>
-                        <img src="Images/card1.jpg" class="card-img-top" alt="...">
-                        <h5 class="caption">Construction Management</h5>
-                    </div>
-                    <div class="card-body px-0 pt-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum expedita tempora quam omnis deleniti!(word break with hyphen test) jjjjjjjjjjjjjjjjjjhuyiouuioiuojjjjjjjjjjj54455555788uiyuuihjhhjhjh Consequuntur, distinctio magnam beatae dignissimos assumenda quisquam accusamus similique aut esse pariatur consectetur ab adipisci cupiditate sint maxime dolorum doloremque autem quasi nostrum nobis dicta? Sit ipsum enim sint quos quod nulla consequuntur amet voluptates. Voluptate cum facilis libero rem veritatis?</p>
-                        <a href="services.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="card border-0">
-                    <div>
-                        <img src="Images/card2.jpg" class="card-img-top" alt="...">
-                        <h5 class="caption">Renovation</h5>
-                    </div>
-                    <div class="card-body px-0 pt-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum expedita tempora quam omnis deleniti!(word break with hyphen test) jjjjjjjjjjjjjjjjjjhuyiouuioiuojjjjjjjjjjj54455555788uiyuuihjhhjhjh Consequuntur, distinctio magnam beatae dignissimos assumenda quisquam accusamus similique aut esse pariatur consectetur ab adipisci cupiditate sint maxime dolorum doloremque autem quasi nostrum nobis dicta? Sit ipsum enim sint quos quod nulla consequuntur amet voluptates. Voluptate cum facilis libero rem veritatis?</p>
-                        <a href="services.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="card border-0">
-                    <div>
-                        <img src="Images/card3.jpg" class="card-img-top" alt="...">
-                        <h5 class="caption">Architectuure</h5>
-                    </div>
-                    <div class="card-body px-0 pt-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum expedita tempora quam omnis deleniti!(word break with hyphen test) jjjjjjjjjjjjjjjjjjhuyiouuioiuojjjjjjjjjjj54455555788uiyuuihjhhjhjh Consequuntur, distinctio magnam beatae dignissimos assumenda quisquam accusamus similique aut esse pariatur consectetur ab adipisci cupiditate sint maxime dolorum doloremque autem quasi nostrum nobis dicta? Sit ipsum enim sint quos quod nulla consequuntur amet voluptates. Voluptate cum facilis libero rem veritatis?</p>
-                        <a href="services.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
         
     <section id="sec-4">
         <div class="container">
             <h1>Gallery</h1>
             <p>Explore our stunning gallery showcasing the finest examples of our construction and maintenance projects. From iconic architectural marvels to innovative designs, our work reflects precision, creativity, and excellence. Whether it’s modern infrastructure, elegant interiors, or timeless restorations, we bring your vision to life with unmatched quality and attention to detail. Let us build your dreams into reality!</p>
-            <!-- <div class="filter">
-                <a href="#">Show all</a>
-                <a href="#">buildings</a>
-                <a href="#">interior design</a>
-                <a href="#">isolation</a>
-                <a href="#">plumping</a>
-            </div> -->
             <div class="cont">
                 <img class="wow animated fadeIn slow" src="Images/gallery1.jpg" alt="pic">
                 <aside>
@@ -347,63 +255,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-    <!-- <section id="sec-5">
-        <div class="container">
-            <h1>customer reviews</h1>
-            <p>We take pride in delivering exceptional services and creating memorable experiences for our clients. Here’s what they have to say about working with us!</p>
-            <div class="cont">
-                <article class="quoteblock">
-                    <div class="quotetxt arrow">
-                        <p><img src="Images/blockquote2.png" alt="quote mark"></p>
-                        <p>The team was incredibly professional and efficient. They transformed my vision into reality, and the result was beyond my expectations. Highly recommend their services!</p>
-                    </div>
-                    <figure>
-                        <img class="customer" src="Images/customer-review-icon.png" alt="customer1">
-                        <figcaption>Emma Johnson</figcaption>
-                    </figure>
-                </article>
-                <article class="quoteblock">
-                    <div class="quotetxt arrow">
-                        <p><img src="Images/blockquote1.png" alt="quote mark"></p>
-                        <p>Amazing attention to detail! The entire process was smooth, and the final outcome was nothing short of perfection. I couldn’t be happier with the results.</p>
-                    </div>
-                    <figure>
-                        <img class="customer" src="Images/customer-review-icon.png" alt="customer1">
-                        <figcaption>Liam Brown</figcaption>
-                    </figure>
-                </article>
-                <article class="quoteblock">
-                    <div class="quotetxt arrow">
-                        <p><img src="Images/blockquote2.png" alt="quote mark"></p>
-                        <p>Exceptional service from start to finish. The staff was friendly, responsive, and truly cared about delivering the best experience. Thank you for an outstanding job!</p>
-                    </div>
-                    <figure>
-                        <img class="customer" src="Images/customer-review-icon.png" alt="customer1">
-                        <figcaption>Sophia Wilson</figcaption>
-                    </figure>
-                </article>
-            </div>
-        </div>
-        <div class="contactUs">
-            <div class="container">
-                <aside>
-                    <h1>do you have any questions?</h1>
-                    <h2>feel free to contact us!</h2>
-                </aside>
-                <form id="form" action="/" method="">
-                    <input type="text" name="name" id="" placeholder="Name" required>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                    <input type="text" name="message" id="" placeholder="Message" required>
-                    <input type="submit" value="submit" id="submit">
-                    <p id="msg"></p>
-                </form>
-            </div>
-        </div>
-    </section> -->
 
     <section id="sec-5">
         <div class="container">
@@ -462,22 +313,13 @@
             <div class="links">
                 <h1>Explor links</h1>
                 <a href="index.html">Home</a>
-                <a href="services.html">Our services</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="contact.html">Get A Quote</a>
                 <a href="about.html">About Us</a>
                 <a href="privacypolicy.html">Privacy Policy</a>
-                <a href="terms.html">Our terms</a>
                 <a href="#">Location</a>
             </div>
-            <!-- <div class="posts">
-                <h1>Latest posts</h1>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-            </div> -->
+    
             <div class="contact">
                 <h1>Contact Us</h1>
                 <p>123 High Street, Sydney, NSW, Australia</p>
