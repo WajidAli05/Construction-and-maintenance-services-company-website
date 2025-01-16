@@ -101,3 +101,5 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
             alert('There was an error sending your message. Please try again.');
         });
 });
+
+

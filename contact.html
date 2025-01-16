@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,14 @@
     <link href="css/animate.compat.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script defer src="js/scripts.js"></script>
-    <script src="index.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="js/scripts.js" defer></script>
+    <script src="js/index.js" defer></script>
     <title>Contact Us | JFH</title>
 </head>
 
 <body>
+    <!-- Header Section -->
     <section id="sec-0">
         <header class="top">
             <div class="container">
@@ -22,15 +24,15 @@
                 <div class="social">
                     <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><img src="Images/youtube-logotype.png" alt=""></i></a>
+                    <a href="#"><img src="Images/youtube-logotype.png" alt=""></a>
                 </div>
             </div>
         </header>
         <header>
             <div class="hide" id="searchBar">
-                <input type="search" name="searchBox" id="searchBox" placeholder="Type your search here..    Press [Esc] to exist">
+                <input type="search" name="searchBox" id="searchBox" placeholder="Type your search here..    Press [Esc] to exit">
             </div>
-            <div class="container">  
+            <div class="container">
                 <h1>
                     <span>JFH</span> Construction & Maintenance Company 
                     <p>The customer is very happy to be followed.</p>
@@ -39,7 +41,13 @@
                 <input type="checkbox" id="menu">
                 <nav>
                     <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
+                    <div class="dropdown">
+                        <a class="dropdown-btn">Services</a>
+                        <div class="dropdown-content">
+                            <a href="construction.html">Construction</a>
+                            <a href="maintenance.html">Maintenance</a>
+                        </div>
+                    </div>
                     <a href="about.html">About Us</a>
                     <a href="contact.html">Contact</a>
                     <a href="contact.html" class="quotebtn">Get a Quote</a>
@@ -49,26 +57,48 @@
     </section>
 
 
-    <section id="sec-1">
+        <!-- Contact Form Section -->
+        <section id="contact-form">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    <!-- Google Map and Contact Form Section -->
+    <section id="location">
         <div class="container">
-            <h1>Terms and Conditions</h1>
-            <p>JFH Construction & Maintenance Company values transparent communication with our clients. The following terms apply to interactions through our Contact Us page:</p>
-            <h2>1. Accurate Information</h2>
-            <p>When contacting us, please provide accurate and complete information to ensure effective communication and prompt responses.</p>
-            <h2>2. Response Time</h2>
-            <p>We aim to respond to all inquiries within 1-2 business days. However, response times may vary depending on the complexity of the inquiry.</p>
-            <h2>3. Communication Channels</h2>
-            <p>We primarily communicate via the provided email or phone number. Please ensure these details are accessible and functional.</p>
-            <h2>4. Confidentiality</h2>
-            <p>All information shared through the Contact Us form or email will be kept confidential and used solely for addressing your inquiries.</p>
-            <h2>5. Misuse of Communication</h2>
-            <p>Any misuse of our communication channels, such as spamming or sharing inappropriate content, will result in restricted access to our services.</p>
-            <h2>Contact Us</h2>
-            <p>For further information, please reach out at <a href="mailto:info@jfhconstruction.com">info@jfhconstruction.com</a> or call us at +61 2 1234 5678.</p>
+            <h1>Our Location</h1>
+            <p>Visit us at our office or contact us for more details</p>
+            <div class="map-responsive">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.346319871734!2d73.04983481043315!3d33.707870874717614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9d8a9f2f8b87%3A0x9e1b7ff8c1777b07!2sYour%20Location!5e0!3m2!1sen!2sus!4v1674526797744!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
     </section>
-    
 
+    <!-- Footer Section -->
     <section id="sec-6">
         <div class="container">
             <div class="about">
@@ -77,30 +107,17 @@
                     JFH Construction & Maintenance Company
                     <p>The customer is very happy to be followed.</p>
                 </h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus eius nisi repudiandae ipsam pariatur, quos perspiciatis eaque officia rerum odio modi sed fugiat mollitia? Rerum, architecto obcaecati!</p>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></i></a>
-                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                <p>JFH Construction & Maintenance Company specializes in delivering high-quality construction and maintenance solutions tailored to your needs. Whether it's residential, commercial, or routine maintenance, their experienced team ensures projects are completed with precision, reliability, and efficiency. Committed to quality and on-time delivery, JFH transforms your vision into reality with professional craftsmanship and exceptional attention to detail.</p>
             </div>
             <div class="links">
-                <h1>Explor links</h1>
+                <h1>Explore Links</h1>
                 <a href="index.html">Home</a>
-                <a href="services.html">Our services</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="contact.html">Get A Quote</a>
                 <a href="about.html">About Us</a>
                 <a href="privacypolicy.html">Privacy Policy</a>
-                <a href="terms.html">Our terms</a>
                 <a href="#">Location</a>
             </div>
-            <!-- <div class="posts">
-                <h1>Latest posts</h1>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-            </div> -->
             <div class="contact">
                 <h1>Contact Us</h1>
                 <p>123 High Street, Sydney, NSW, Australia</p>
@@ -109,11 +126,16 @@
             </div>            
         </div>
     </section>
+
     <section id="sec-7">
         <div class="container">
             <p>Copyright @2024 | Designed by <span>Wajid Ali</span></p>
         </div>
     </section>
+
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
     <script src="js/wow.min.js"></script>
     <script> new WOW().init();</script>

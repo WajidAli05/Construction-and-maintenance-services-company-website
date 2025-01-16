@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +8,15 @@
     <link href="css/animate.compat.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script defer src="js/scripts.js"></script>
-    <script src="index.js" defer></script>
-    <title>About Us | JFH</title>
+    <script src="js/index.js" defer></script>
+    <title>About | JFH</title>
 </head>
 
 <body>
     <section id="sec-0">
+        <!-- Header Section -->
         <header class="top">
             <div class="container">
                 <p>Call Us: +61 123 456 789</p>
@@ -22,13 +24,13 @@
                 <div class="social">
                     <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><img src="Images/youtube-logotype.png" alt=""></i></a>
+                    <a href="#"><img src="Images/youtube-logotype.png" alt=""></a>
                 </div>
             </div>
         </header>
         <header>
             <div class="hide" id="searchBar">
-                <input type="search" name="searchBox" id="searchBox" placeholder="Type your search here..    Press [Esc] to exist">
+                <input type="search" name="searchBox" id="searchBox" placeholder="Type your search here..    Press [Esc] to exit">
             </div>
             <div class="container">  
                 <h1>
@@ -39,34 +41,75 @@
                 <input type="checkbox" id="menu">
                 <nav>
                     <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
+                    <div class="dropdown">
+                        <a class="dropdown-btn">Services</a>
+                        <div class="dropdown-content">
+                            <a href="construction.html">Construction</a>
+                            <a href="maintenance.html">Maintenance</a>
+                        </div>
+                    </div>
                     <a href="about.html">About Us</a>
                     <a href="contact.html">Contact</a>
                     <a href="contact.html" class="quotebtn">Get a Quote</a>
                 </nav>
             </div>
         </header>
+        <article>
+            <div class="container text-center">
+                <i class="bi bi-house-fill" id="animated-home-icon" style="font-size: 5rem; color: #FFCB0F;"></i>
+                <h2>About<br>
+                    <span>JFH Bulding And Maintenance</span>
+                </h2>
+            </div>
+        </article>                       
     </section>
 
-    <section id="sec-1">
+    <!-- Services Section -->
+    <section id="services">
         <div class="container">
-            <h1>Terms and Conditions</h1>
-            <p>At JFH Construction & Maintenance Company, we are committed to delivering the highest standards of service. The following terms and conditions outline the framework for a smooth and professional relationship with our clients:</p>
-            <h2>1. Professional Standards</h2>
-            <p>We adhere to strict professional guidelines to ensure that all projects are completed with the highest quality and efficiency.</p>
-            <h2>2. Client Responsibilities</h2>
-            <p>Clients are responsible for providing accurate project details and timely communication to facilitate successful project completion.</p>
-            <h2>3. Confidentiality</h2>
-            <p>All client information provided to JFH Construction & Maintenance Company will remain confidential and used solely for the purpose of project execution.</p>
-            <h2>4. Dispute Resolution</h2>
-            <p>In the event of any disputes, we encourage resolution through clear communication. Formal disputes will follow the procedures outlined in the service agreement.</p>
-            <h2>5. Amendments</h2>
-            <p>We reserve the right to update these terms to reflect changes in company policies or regulatory requirements. Clients will be informed of any significant updates.</p>
-            <h2>Contact Information</h2>
-            <p>For questions or concerns regarding our terms, feel free to contact us at <a href="mailto:info@jfhconstruction.com">info@jfhconstruction.com</a>.</p>
+            <h1>About Us</h1>
+            <div class="row text-center">
+                <!-- Commercial Services -->
+                <div class="col-md-4 wow fadeInLeft" data-wow-duration="4s">
+                    <h2>Commercial Services</h2>
+                    <p>Our commercial construction services are designed to help businesses of all sizes build, expand, and innovate. Whether you're looking to create a modern office space, develop a retail store, or build a warehouse, we have the expertise and resources to bring your vision to life. We ensure that each project is completed on time and within budget, providing a seamless experience from start to finish. Our team of experts is committed to delivering high-quality work that exceeds your expectations, creating spaces that foster productivity and success for your business.</p>
+                </div>
+                <!-- Residential Services -->
+                <div class="col-md-4 wow fadeInUp" data-wow-duration="4s">
+                    <h2>Residential Services</h2>
+                    <p>We understand that your home is more than just a place to live—it's where memories are made. Our residential construction services are focused on turning your dream home into a reality. Whether you're looking to build a custom home from scratch or renovate an existing property, our team will work closely with you to design and construct a space that reflects your unique style and needs. From modern kitchens and bathrooms to expansive living rooms and outdoor spaces, we ensure every detail is carefully crafted to create a home that you'll love for years to come.</p>
+                </div>
+                <!-- Maintenance Services -->
+                <div class="col-md-4 wow fadeInRight" data-wow-duration="4s">
+                    <h2>Maintenance Services</h2>
+                    <p>Maintaining your property is essential to its long-term value and functionality. Our maintenance services are designed to keep your property in top condition, from routine inspections and repairs to more complex systems such as HVAC, plumbing, and electrical. Our team is highly skilled in handling all aspects of property maintenance, ensuring that everything from minor fixes to major repairs is taken care of promptly and efficiently. We offer both residential and commercial maintenance services, ensuring that your property remains safe, functional, and aesthetically pleasing at all times.</p>
+                </div>
+            </div>
         </div>
     </section>
-    
+
+    <!-- Location Section -->
+    <section id="location">
+        <div class="container">
+            <h1>Our Location</h1>
+            <p>Visit us at our office or contact us for more details</p>
+            <div class="map-responsive">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.346319871734!2d73.04983481043315!3d33.707870874717614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9d8a9f2f8b87%3A0x9e1b7ff8c1777b07!2sYour%20Location!5e0!3m2!1sen!2sus!4v1674526797744!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <!-- Blinking Pin Animation -->
+                <!-- <div class="location-pin">
+                    <div class="pin"></div>
+                </div> -->
+            </div>
+        </div>
+    </section>
 
     <section id="sec-6">
         <div class="container">
@@ -76,30 +119,17 @@
                     JFH Construction & Maintenance Company
                     <p>The customer is very happy to be followed.</p>
                 </h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus eius nisi repudiandae ipsam pariatur, quos perspiciatis eaque officia rerum odio modi sed fugiat mollitia? Rerum, architecto obcaecati!</p>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></i></a>
-                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                <p>JFH Construction & Maintenance Company specializes in delivering high-quality construction and maintenance solutions tailored to your needs. Whether it's residential, commercial, or routine maintenance, their experienced team ensures projects are completed with precision, reliability, and efficiency. Committed to quality and on-time delivery, JFH transforms your vision into reality with professional craftsmanship and exceptional attention to detail.</p>
             </div>
             <div class="links">
                 <h1>Explor links</h1>
                 <a href="index.html">Home</a>
-                <a href="services.html">Our services</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="contact.html">Get A Quote</a>
                 <a href="about.html">About Us</a>
                 <a href="privacypolicy.html">Privacy Policy</a>
-                <a href="terms.html">Our terms</a>
                 <a href="#">Location</a>
             </div>
-            <!-- <div class="posts">
-                <h1>Latest posts</h1>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-            </div> -->
             <div class="contact">
                 <h1>Contact Us</h1>
                 <p>123 High Street, Sydney, NSW, Australia</p>
@@ -113,6 +143,14 @@
             <p>Copyright @2024 | Designed by <span>Wajid Ali</span></p>
         </div>
     </section>
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div class="contact-us active"> 
+        <i class="fas fa-envelope"></i> Contact Us
+    </div>
+
 
     <script src="js/wow.min.js"></script>
     <script> new WOW().init();</script>

@@ -69,9 +69,7 @@ html {
 #sec-0 .top p:nth-of-type(2)::before{
     content: "\f0e0";
 }
-/* #sec-0 .top p:last-of-type::before{
-    content: "\f017";
-} */
+
 #sec-0 .top .social {
     display: flex;
     width: 45%;
@@ -1643,5 +1641,343 @@ text-shadow:1px 1px #73757E;
     }
 }
 
+
+
+/* ============================================================================================================ */
+/* maintenance.html */
+/* Maintenance Section Styles */
+#maintenance {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#maintenance h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--haccent);
+}
+
+/* Service Styles */
+.service {
+    margin-bottom: 50px;
+}
+
+.service h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, var(--haccent), var(--bgaccent));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.service ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.service ul li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--textaccent2);
+    margin-bottom: 10px;
+}
+
+.service ul li i {
+    color: var(--haccent);
+    margin-right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .service .row {
+        flex-direction: column;
+    }
+
+    .service .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* ============================================================================================================ */
+/* about.html */
+/* Services Section */
+#services {
+    padding: 60px 0;
+    background-color: #fff; /* Changed background color to white */
+    border-radius: 15px; /* Added border-radius */
+}
+
+#services h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    color: var(--haccent);
+}
+
+#services .row .col-md-4 {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    animation: zoomIn 1s ease-out; /* Updated animation */
+}
+
+#services .row .col-md-4 h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#services .row .col-md-4 p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Map Section */
+#location {
+    padding: 60px 0;
+    background-color: var(--txtaccent); /* Changed background color to white */
+}
+
+.map-responsive {
+    position: relative;
+}
+
+.map-responsive iframe {
+    border-radius: 10px;
+}
+
+.location-pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blink 1s infinite;
+}
+
+.location-pin .pin {
+    width: 30px;
+    height: 30px;
+    background-color: var(--haccent);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Scroll Animations */
+.wow {
+    visibility: hidden;
+}
+
+.wow.fadeInLeft {
+    animation: fadeInLeft 2s forwards;
+}
+
+.wow.fadeInUp {
+    animation: fadeInUp 2s forwards;
+}
+
+.wow.fadeInRight {
+    animation: fadeInRight 2s forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* New animation for Services */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+#location .container h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--haccent);
+}
+
+#location .container p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#services .container .row .col-md-4{
+    border-top: 1px solid var(--haccent);
+    border-bottom: 1px solid var(--haccent);
+    border-radius: 100px;
+    padding: 40px;
+}
+
+
+/* ============================================================================================================ */
+/* contact.html */
+/* Map Section */
+#location {
+    margin: 50px 0;
+}
+
+.map-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height: 0;
+    max-width: 100%;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact Form Section */
+#contact-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: var(--haccent);
+    color: var(--txtaccent);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--haccent2);
+}
+
+/* Form Hover Animation */
+#contact-form input,
+#contact-form textarea {
+    transition: transform 0.3s ease-in-out;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    transform: scale(1.05);
+    border-color: var(--haccent);
+    outline: none;
+}
+
+/* Scroll to Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--haccent);
+    color: var(--txtaccent);
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-top i {
+    margin: 0;
+}
+
+/* Show Scroll Top Button when scrolled */
+body.scrolled .scroll-top {
+    display: block;
+}
 
 /* END OF SHEET */
